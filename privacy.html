@@ -20,22 +20,22 @@ th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; vertical-al
 <li><strong>Your phone number</strong> and the date you opted in to texts, so we can reply and keep a record of your consent.</li>
 <li><strong>Your messages</strong> to Kip and Kip's replies.</li>
 <li><strong>Your name, email and home city</strong>, which you give by text. Your city sets your time zone and weather.</li>
-<li><strong>Running data from your watch account, once you connect it (COROS or Garmin):</strong> your activities and their workout files, with distance, time, pace, heart rate, cadence, power and the GPS route of each run, and the name of the device that recorded them.</li>
+<li><strong>Activity data from your watch account, once you connect it (COROS or Garmin):</strong> your runs and anything else your watch records (rides, swims, walks, hikes, strength sessions), and their workout files, with distance, time, pace or speed, heart rate, cadence, power, calories and the GPS route of each, and the name of the device that recorded them.</li>
 <li><strong>Your watch account authorization:</strong> a token COROS or Garmin gives us when you approve the connection, and your Garmin user ID. We never see your COROS or Garmin password.</li>
 <li><strong>Calendar information</strong>, only if you connect a calendar: the times you are busy and the titles of those events, read-only. We never change your calendar.</li>
-<li><strong>What Kip learns or you tell it:</strong> your rules and preferences, your weekly targets and plans, and patterns computed from your runs (your usual paces and weekly shape, and an approximate home location, rounded to about 1 km, from where your runs start).</li>
+<li><strong>What Kip learns or you tell it:</strong> your rules and preferences, your weekly targets and plans, and patterns computed from your activities (your usual paces and weekly shape, and an approximate home location, rounded to about 1 km, from where your runs start).</li>
 </ul>
 
 <h2>How we use it</h2>
-<p>Only to provide Kip to you: analysing your runs, answering your questions, planning your week around your calendar and the weather, and sending the texts you signed up for. We look at messages and logs only to fix problems and improve how Kip answers you.</p>
+<p>Only to provide Kip to you: analysing your runs and other activities, answering your questions, planning your week around your calendar and the weather, and sending the texts you signed up for. We look at messages and logs only to fix problems and improve how Kip answers you.</p>
 
 <div class="ai">
 <h2>AI transparency statement</h2>
 <ul>
-<li><strong>What AI does here:</strong> Kip's replies are written by an AI model, Claude, from Anthropic. To write a reply, Kip sends Claude your message and the data needed to answer it: your recent runs and their details (including Garmin or COROS data), your rules, your plan, and the forecast. Kip's run analysis, weekly patterns and plan are computed by our own code; Claude puts them into words and answers your questions about them.</li>
-<li><strong>Why:</strong> so you can ask about your running in your own words and get a short, specific answer by text.</li>
+<li><strong>What AI does here:</strong> Kip's replies are written by an AI model, Claude, from Anthropic. To write a reply, Kip sends Claude your message and the data needed to answer it: your recent runs and their details and other activities (including Garmin or COROS data), your rules, your plan, and the forecast. Kip's run analysis, weekly patterns and plan are computed by our own code; Claude puts them into words and answers your questions about them.</li>
+<li><strong>Why:</strong> so you can ask about your running and training in your own words and get a short, specific answer by text.</li>
 <li><strong>No AI training:</strong> we do not use your data, or anything derived from it, to train, evaluate or improve AI models, and we do not allow our providers to. Anthropic processes it only to produce Kip's replies.</li>
-<li><strong>Your consent:</strong> before Kip processes your running data with AI, it asks for your explicit OK by text, and does nothing with your running data until you reply AGREE.</li>
+<li><strong>Your consent:</strong> before Kip processes your activity data with AI, it asks for your explicit OK by text, and does nothing with your activity data until you reply AGREE.</li>
 <li><strong>Withdrawing consent, any time:</strong> text <strong>"delete my data"</strong> to withdraw consent completely and have everything deleted, or <strong>"disconnect garmin"</strong> (or "disconnect coros") to stop Kip receiving new data from that account. You can also remove Kip from your Garmin Connect or COROS account settings.</li>
 </ul>
 </div>
@@ -44,11 +44,11 @@ th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; vertical-al
 <p>Only the services Kip needs to run, and only what each needs. Garmin and COROS data goes only to the services marked below.</p>
 <table>
 <tr><th>Service</th><th>What it gets</th><th>Why</th></tr>
-<tr><td>Anthropic (Claude)</td><td>Your messages and the running data needed to answer them, including Garmin and COROS data</td><td>Writes Kip's replies (AI)</td></tr>
+<tr><td>Anthropic (Claude)</td><td>Your messages and the activity data needed to answer them, including Garmin and COROS data</td><td>Writes Kip's replies (AI)</td></tr>
 <tr><td>Amazon Web Services</td><td>Everything above, stored encrypted, including Garmin and COROS data</td><td>Hosting, database and backups (United States)</td></tr>
-<tr><td>Twilio</td><td>Your phone number and the texts, which can include summaries of your runs</td><td>Sends and receives texts</td></tr>
+<tr><td>Twilio</td><td>Your phone number and the texts, which can include summaries of your runs and other activities</td><td>Sends and receives texts</td></tr>
 <tr><td>Garmin, if you connect it</td><td>Your approval of the connection</td><td>Sends Kip your activities</td></tr>
-<tr><td>COROS, if you connect it</td><td>Your approval of the connection</td><td>Lets Kip read your runs</td></tr>
+<tr><td>COROS, if you connect it</td><td>Your approval of the connection</td><td>Lets Kip read your activities</td></tr>
 <tr><td>Open-Meteo</td><td>An approximate location (about 1 km, worked out from where your runs start), or a city name for a trip</td><td>Weather forecasts</td></tr>
 <tr><td>Google or Apple, if you connect a calendar</td><td>Kip's read request</td><td>Reads your busy times</td></tr>
 </table>
@@ -56,7 +56,7 @@ th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; vertical-al
 
 <h2>Your choices and rights</h2>
 <ul>
-<li><strong>Access and export:</strong> text <strong>"export my data"</strong>. Within a few minutes Kip texts you a private download link, valid for 24 hours, to a zip of everything we hold about you: your original run files, a spreadsheet of your runs, your rules and corrections in your words, weekly goals and plans, calendar busy times, which services are connected (never your logins), and our messages. The file is deleted from our storage when the link expires. You can ask as often as you like, and you don't need to have agreed to AI processing. You can also email us and we send the same copy within 30 days.</li>
+<li><strong>Access and export:</strong> text <strong>"export my data"</strong>. Within a few minutes Kip texts you a private download link, valid for 24 hours, to a zip of everything we hold about you: your original activity files, a spreadsheet of your runs and other activities, your rules and corrections in your words, weekly goals and plans, calendar busy times, which services are connected (never your logins), and our messages. The file is deleted from our storage when the link expires. You can ask as often as you like, and you don't need to have agreed to AI processing. You can also email us and we send the same copy within 30 days.</li>
 <li><strong>Correct:</strong> tell Kip by text ("that run was a workout", "my email is …") or email us.</li>
 <li><strong>Delete:</strong> text <strong>"delete my data"</strong>. Kip explains what will be deleted and asks you to confirm. Once you confirm, everything we hold about you is deleted: runs, files, rules, plans, connections and messages, and Kip disconnects from Garmin and COROS. Copies in our nightly backups age out within 30 days. Twilio keeps its own record of texts under its policies.</li>
 <li><strong>Stop texts:</strong> text <strong>STOP</strong> at any time; START to resume. Text HELP for help.</li>
